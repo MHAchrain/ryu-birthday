@@ -1,6 +1,6 @@
-import foto1 from "../assets/images/foto1.JPG"
-import foto2 from "../assets/images/foto2.JPG"
-import foto3 from "../assets/images/foto3.JPG"
+import foto1 from "../assets/images/foto1.jpg"
+import foto2 from "../assets/images/foto2.jpg"
+import foto3 from "../assets/images/foto3.jpg"
 
 export const puzzleData = [
   {
