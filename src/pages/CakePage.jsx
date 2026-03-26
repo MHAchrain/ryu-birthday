@@ -38,7 +38,7 @@ export default function CakePage() {
             return sum + normalized * normalized;
           }, 0) / dataArray.length
         );
-        if (volume > 0.3) handleBlowSuccess();
+        if (volume > 0.1) handleBlowSuccess();
         else requestAnimationFrame(checkBlow);
       };
       checkBlow();
