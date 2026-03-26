@@ -1,0 +1,52 @@
+@import "tailwindcss";
+body {
+  margin: 0;
+  padding: 0;
+  background: black;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+/* Custom Scrollbar untuk bagian deskripsi */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 4px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 10px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 255, 255, 0.5);
+}
+
+.icon-wrapper {
+  --side-dist: inherit; /* Mengikuti prop sideDistance */
+}
+
+/* Khusus Mobile (Layar di bawah 768px) */
+@media (max-width: 768px) {
+  .omnichat-5, .omnichat-6, .omnichat-1, .omnichat-2, .omnichat-3, .omnichat-4 {
+    /* Paksa semua ke pinggir (hanya sisa jarak 3% dari layar) */
+    --side-dist: 3% !important; 
+  }
+  
+  /* Opsional: Kecilkan sedikit ukuran iconnya di mobile agar tidak penuh */
+  .icon-wrapper {
+    width: 45px !important;
+    height: 45px !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .omnichat-6 { top: 20% !important; } /* Naikkan si Ungu */
+  .omnichat-5 { top: 60% !important; } /* Turunkan si Kuning */
+}
